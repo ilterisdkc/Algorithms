@@ -9,8 +9,6 @@ public class MergeSort {
 
     public static void mergeSort(int[] numbers) {
         int len = numbers.length;
-        int[] result = new int[len];
-        Arrays.copyOf(numbers, len);
 
         if (len < 2) {
             return;
