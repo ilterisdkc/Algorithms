@@ -2,10 +2,14 @@ package SearchAlgorithms;
 
 /**
  * @author ilterisdkc
+ *
+ * BinarySearch is a sorted array search algorithm
+ * Time complexity = O(logn)
+ *
  */
 public class BinarySearch {
 
-    public int iterativeBinarySearch(int arr[], int element) {
+    public static int iterativeBinarySearch(int arr[], int element) {
         int first = 0;
         int last = arr.length-1;
 

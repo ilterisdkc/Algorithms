@@ -1,3 +1,4 @@
+import SearchAlgorithms.JumpSearch;
 import SortAlgorithms.MergeSort;
 import SortAlgorithms.QuickSort;
 
@@ -24,18 +25,21 @@ public class Main {
 
         QuickSort.quickSort(numbers, 0, numbers.length-1);
         System.out.println("QuickSorted: " + printIntArray(numbers));
+
+        int element = 57;
+        System.out.println("JumpSearch for 57: " + JumpSearch.jumpSearch(numbers, element));
     }
 
     private static String printIntArray(int[] numbers) {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         try {
             for (int number : numbers) {
-                result = result + number + " , ";
+                result.append(number).append(" , ");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return result;
+        return result.toString();
     }
 }
